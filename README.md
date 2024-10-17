@@ -32,23 +32,26 @@ For the "BEFORE" metrics, all resources were originally deployed, exposed to the
 For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL traffic with the exception of my admin workstation, and all other resources were protected by their built-in firewalls as well as Private Endpoint
 
 ## Attack Maps Before Hardening / Security Controls
-![NSG Allowed Inbound Malicious Flows](https://i.imgur.com/1qvswSX.png)<br>
-![Linux Syslog Auth Failures](https://i.imgur.com/G1YgZt6.png)<br>
-![Windows RDP/SMB Auth Failures](https://i.imgur.com/ESr9Dlv.png)<br>
+### NSG Allowed Inbound Malicious Flows
+![NSG Allowed Inbound Malicious Flows](https://i.imgur.com/O2xOyR3.png)<br>
+### Linux Syslog Auth Failures
+![Linux Syslog Auth Failures](https://i.imgur.com/6p34ilG.png)<br>
+### Windows RDP/SMB Auth Failures
+![Windows RDP/SMB Auth Failures](https://i.imgur.com/690SqJj.png)<br>
 
 ## Metrics Before Hardening / Security Controls
 
 The following table shows the metrics we measured in our insecure environment for 24 hours:
-Start Time 2024-09-22 01:55:11
-Stop Time 2024-09-23 01:55:11
+Start Time 2024-10-14 02:54:17
+Stop Time 2024-10-15 02:54:17
 
 | Metric                   | Count
 | ------------------------ | -----
-| SecurityEvent            | 99258
-| Syslog                   | 34845
-| SecurityAlert            | 0
-| SecurityIncident         | 230
-| AzureNetworkAnalytics_CL | 0
+| SecurityEvent            | 101524
+| Syslog                   | 4344
+| SecurityAlert            | 33
+| SecurityIncident         | 378
+| AzureNetworkAnalytics_CL | 4349
 
 ## Attack Maps Before Hardening / Security Controls
 
@@ -57,13 +60,13 @@ Stop Time 2024-09-23 01:55:11
 ## Metrics After Hardening / Security Controls
 
 The following table shows the metrics we measured in our environment for another 24 hours, but after we have applied security controls:
-Start Time 2024-09-27 03:18:25
-Stop Time	2024-09-19 15:37
+Start Time 2024-10-16 03:53:40
+Stop Time	2024-10-17 03:53:40
 
 | Metric                   | Count
 | ------------------------ | -----
-| SecurityEvent            | 16617
-| Syslog                   | 2518
+| SecurityEvent            | 18248
+| Syslog                   | 1
 | SecurityAlert            | 0
 | SecurityIncident         | 0
 | AzureNetworkAnalytics_CL | 0
