@@ -71,8 +71,12 @@ Stop Time	2024-10-17 03:53:40
 | SecurityIncident         | 0
 | AzureNetworkAnalytics_CL | 0
 
+> [!NOTE]
+> Within 24 hours of implementing the security controls, there was an 82.03% reduction in security events on our Windows VMs, a 99.98% decrease in security events on our Linux systems, and a 100% reduction in incidents detected by Microsoft Defender for Cloud, Sentinel, and Network Security Group (NSG) inbound malicious flows.
+
 ## Conclusion
 
 In this project, a mini honeynet was constructed in Microsoft Azure and log sources were integrated into a Log Analytics workspace. Microsoft Sentinel was employed to trigger alerts and create incidents based on the ingested logs. Additionally, metrics were measured in the insecure environment before security controls were applied, and then again after implementing security measures. It is noteworthy that the number of security events and incidents were drastically reduced after the security controls were applied, demonstrating their effectiveness.
+
 
 It is worth noting that if the resources within the network were heavily utilized by regular users, it is likely that more security events and alerts may have been generated within the 24-hour period following the implementation of the security controls.
