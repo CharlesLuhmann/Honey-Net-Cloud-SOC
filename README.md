@@ -1,5 +1,5 @@
 # Building a SOC + Honeynet in Azure
-![Cloud Honeynet / SOC](https://i.imgur.com/qAeYVJT.png)
+![Cloud Honeynet / SOC](https://i.imgur.com/xkUOs7n.png)
 
 ## Introduction
 
